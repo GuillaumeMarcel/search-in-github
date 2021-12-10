@@ -4,6 +4,7 @@ import { Input } from "../components/input";
 import { SearchButton } from "../components/button";
 import { Card } from "../components/card";
 
+import styles from "../../assets/styles/pages-base";
 //API
 import { searchUser } from "../api";
 
@@ -24,7 +25,7 @@ export default function Home() {
         <Card user={user} setUser={setUser} />
       ) : (
         <View>
-          <Text>Welcome to github searcher</Text>
+          <Text>Welcome to github searcher 🐙</Text>
           <Input callBack={setUsername} value={username} />
           <SearchButton action={() => sendUsername(username)} />
         </View>

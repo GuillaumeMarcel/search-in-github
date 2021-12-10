@@ -1,70 +1,61 @@
 import { StyleSheet, Dimensions } from "react-native";
 
 const styles = StyleSheet.create({
-  connectionContainer: {
+  header: {
     display: "flex",
-    justifyContent: "center",
-    alignContent: "center",
-    width: "100%",
-    height: "50%",
-  },
-  connectionInput: {
-    alignItems: "center",
-    width: "100%",
-  },
-  input: {
-    backgroundColor: "white",
-    width: "80%",
-    padding: 15,
-    marginBottom: "10%",
-    borderRadius: 10,
-  },
-  link: {
-    color: "black",
-    textDecorationLine: "underline",
-  },
-  connectionButton: {
-    alignItems: "center",
-  },
-  button: {
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#1acaff",
     flexDirection: "row",
-    padding: 15,
-    marginTop: "5%",
-    width: "50%",
-    borderColor: "#1AC6F0",
-    borderWidth: 1,
-    borderRadius: 25,
+    alignItems: "center",
+    paddingLeft: 10,
+    marginTop: 40,
+    marginBottom: 10,
+    height: 66,
+    borderBottomWidth: 1,
   },
-  buttonText: {
-    color: "#0082ba",
+  logo: {
+    width: 66,
+    height: 58,
+  },
+  title: {
+    fontSize: 30,
+    marginLeft: 10,
+  },
+  key: {
+    fontSize: 15,
+    width: "40%",
+  },
+  value: {
     fontWeight: "bold",
+    width: "60%",
   },
-  connectionNav: {
-    position: "absolute",
-    height: 60,
-    elevation: 0,
+  mapBox: {
+    display: "flex",
+    flexDirection: "row",
+    marginHorizontal: 15,
   },
-  connectionBox: {
+  buttonBack: {
+    fontWeight: "bold",
+    fontSize: 20,
+  },
+  footer: {
+    display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "100%",
-    height: "105%",
     borderWidth: 1,
-    borderColor: "#00B2FF",
+    paddingVertical: 5,
   },
-  navInput: {
-    color: "#00B2FF",
-    fontWeight: "bold",
+
+  searchButton: {
+    borderWidth: 1,
+    borderRadius: 5,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    padding: 10,
   },
-  fail: {
-    backgroundColor: "#CC4114",
-    color: "white",
-    padding: 20,
-    margin: 20,
-    textAlign: "center",
+
+  input: {
+    marginTop: 15,
   },
 });
 
