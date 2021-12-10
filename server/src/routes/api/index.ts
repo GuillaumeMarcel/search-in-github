@@ -1,12 +1,8 @@
 import { Router } from "express";
-import { authenticateToken } from "../../middlewares/auth";
+import secured from "./secured";
 
-import anthentification from './anthentification'
-import secured from './secured'
+const routes = Router();
 
-const routes = Router()
-
-routes.use('/anthentification', anthentification)
-routes.use("/", /* authenticateToken, */ secured);
+routes.use("/", secured);
 
 export default routes;
